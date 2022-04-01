@@ -6,4 +6,4 @@ Questo è un sito dove raccolgo tutti i miei progetti e mi presento
 - HTML
 
 ### Ringrazio per le librerie: 
-- sdgadshasa
+- sdgadshasakg
