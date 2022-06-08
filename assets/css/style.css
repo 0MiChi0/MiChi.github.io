@@ -1065,4 +1065,59 @@ section {
   }
 }
 
+.box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid gray;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px #c1c1c1;
+  margin-right: 2rem;
+  border-radius: 50%;
+}
+
+.box__label {
+  position: absolute;
+  top: 20%;
+  font-size: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-family: monospace;
+}
+
+.wave {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(0, 184, 245, 0.432);
+  position: absolute;
+  top: 50%;
+  left: -100px;
+  animation: wave 5s ease-in-out alternate-reverse infinite;
+  border-radius: 11% 89% 46% 54% / 14% 13% 87% 86%;
+}
+.wave--secondary {
+  top: 58%;
+  animation-delay: 1s;
+  background-color: rgba(0, 184, 245, 0.532);
+}
+@keyframes wave {
+  to {
+    border-radius: 93% 7% 46% 54% / 14% 13% 87% 86%;
+  }
+}
+
+.box--html .wave {
+  background: rgba(212, 245, 0, 0.432);
+  top: 20%;
+}
+.box--js .wave {
+  top: 90%;
+  background: rgba(0, 245, 0, 0.432);
+}
+.box--java .wave {
+  top: 10%;
+  background: rgba(245, 143, 0, 0.432);
+}
+
 
